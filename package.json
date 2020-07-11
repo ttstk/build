@@ -1,0 +1,24 @@
+{
+  "name": "ttstk-build",
+  "version": "1.0.0",
+  "description": "The Tabletop Simulator Toolkit Build package",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttstk/build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ttstk/build/issues"
+  },
+  "homepage": "https://github.com/ttstk/build#readme",
+  "devDependencies": {
+    "@matanlurey/tts-save-files": "git+https://github.com/matanlurey/tts-save-format.git"
+  }
+}
