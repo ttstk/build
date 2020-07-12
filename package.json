@@ -2,10 +2,14 @@
   "name": "ttstk-build",
   "version": "1.0.0",
   "description": "The Tabletop Simulator Toolkit Build package",
-  "main": "bin/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
@@ -18,7 +22,14 @@
     "url": "https://github.com/ttstk/build/issues"
   },
   "homepage": "https://github.com/ttstk/build#readme",
-  "devDependencies": {
+  "dependencies": {
     "@matanlurey/tts-save-files": "git+https://github.com/matanlurey/tts-save-format.git"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@types/jest": "^26.0.4",
+    "jest": "^26.1.0",
+    "typescript": "^3.9.6"
   }
 }
